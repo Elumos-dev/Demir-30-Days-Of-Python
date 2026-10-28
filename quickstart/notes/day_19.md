@@ -1,0 +1,2 @@
+- Paths like `data/obama_speech.txt` are relative to the folder you run Python **from**. Run from the repo root, or every path breaks.
+- Text files from other systems: add `encoding='utf-8'` to `open()` to avoid `UnicodeDecodeError`.

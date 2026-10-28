@@ -34,6 +34,10 @@
 | 30 |  [Conclusions](./30_Day_Conclusions/30_conclusions.md)|
 
 
+<!-- QUICKSTART-INDEX:START -->
+> ⚡ **Every day opens with a Quick Start**: the smallest working example of each new tool, tagged with the exercises it unlocks. All 30 are runnable and tested. See [quickstart/README.md](./quickstart/README.md).
+<!-- QUICKSTART-INDEX:END -->
+
 <small>🧡🧡🧡 HAPPY CODING 🧡🧡🧡</small>
 
 ---
@@ -86,6 +90,32 @@ RU [Russian](./Russian/readme.md)
 [Day 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md)
 
 ![30DaysOfPython](./images/30DaysOfPython_banner3@2x.png)
+
+
+<!-- QUICKSTART:START generated from quickstart/day_01.py by quickstart/build.py, edit that file instead -->
+## ⚡ Quick Start
+
+Run from the repo root: `python3 quickstart/day_01.py` · `Ex L2.3` = the exercise a line helps with.
+
+```py
+# Day 1: run Python, do math, check types
+# Ex L1.1 (terminal, not Python):  python3 --version
+
+print(7 + 2, 7 - 2, 7 * 2, 7 / 2)      # Ex L1.2: 9 5 14 3.5
+print(7 % 2, 7 // 2, 7 ** 2)          # remainder, floor division, power: 1 3 49
+
+print('Cape Town')                     # Ex L1.3: text goes in quotes
+
+print(type(5), type(2.5), type(1 + 2j))                          # Ex L1.4, L3.1
+print(type('hi'), type(True), type(None))
+print(type([1, 2]), type((1, 2)), type({1, 2}), type({'a': 1}))  # list tuple set dict
+
+# Ex L3.2: distance between (x1, y1) and (x2, y2) = ((x2-x1)**2 + (y2-y1)**2) ** 0.5
+print(((4 - 1) ** 2 + (6 - 2) ** 2) ** 0.5)                      # 5.0
+```
+
+---
+<!-- QUICKSTART:END -->
 
 - [🐍 30 Days Of Python](#-30-days-of-python)
     - [🙌 Become a Sponsor](#-become-a-sponsor)

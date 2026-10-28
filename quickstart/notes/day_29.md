@@ -1,0 +1,2 @@
+- Test every route without writing a frontend: use `curl` (above), or the Thunder Client extension in VS Code, or Postman.
+- The exercise's Heroku demo is offline. Its endpoints match the routes above: list, get one, create, update, delete.

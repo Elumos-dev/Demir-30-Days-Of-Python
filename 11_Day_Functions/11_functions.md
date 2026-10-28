@@ -18,6 +18,56 @@
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
+
+<!-- QUICKSTART:START generated from quickstart/day_11.py by quickstart/build.py, edit that file instead -->
+## ⚡ Quick Start
+
+Run from the repo root: `python3 quickstart/day_11.py` · `Ex L2.3` = the exercise a line helps with.
+
+```py
+# Day 11: functions
+import math
+
+
+def add(a, b):                       # Ex L1.1: parameters in, return value out
+    return a + b
+
+
+def total(*nums):                    # Ex L1.3: *args packs any number of arguments into a tuple
+    for n in nums:
+        if not isinstance(n, (int, float)):   # type check
+            return 'Numbers only'
+    return sum(nums)
+
+
+def greet(name='Guest'):             # Ex L2.5: default value when nothing is passed
+    return f'Hello, {name}!'
+
+
+def show(**info):                    # Ex L2.6: **kwargs packs named arguments into a dict
+    for key, value in info.items():
+        print(f'{key}: {value}')
+
+
+def apply(func, value):              # a function can be passed in like any other value
+    return func(value)
+
+
+print(add(2, 3), add(b=3, a=2))      # positional or by name
+print(total(1, 2, 3), total(1, 'x'))
+print(greet(), greet('Demir'))
+show(sport='football', level=3)
+print(apply(len, 'hello'))
+print(math.sqrt(16), math.pi)        # Ex L1.2, L1.7: sqrt for the quadratic formula
+```
+
+- **Mean** `sum(x) / len(x)` · **Median** sort, take the middle (average the two middles when the length is even) · **Mode** most common value · **Range** `max - min`
+- **Variance** average of `(item - mean) ** 2` · **Std** `variance ** 0.5`
+- Check your answers against the built-in `statistics` module: `statistics.mean`, `median`, `mode`, `pvariance`, `pstdev`.
+
+---
+<!-- QUICKSTART:END -->
+
 - [📘 Day 11](#-day-11)
   - [Functions](#functions)
     - [Defining a Function](#defining-a-function)

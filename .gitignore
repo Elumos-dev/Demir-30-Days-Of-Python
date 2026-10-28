@@ -19,3 +19,5 @@ numpy.ipynb
 .vscode/
 *~
 test.py
+.pytest_cache/
+venv/

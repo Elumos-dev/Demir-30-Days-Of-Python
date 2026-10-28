@@ -17,6 +17,46 @@
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
+
+<!-- QUICKSTART:START generated from quickstart/day_22.py by quickstart/build.py, edit that file instead -->
+## ⚡ Quick Start
+
+Run from the repo root: `python3 quickstart/day_22.py` · `Ex L2.3` = the exercise a line helps with.
+
+```py
+# Day 22: web scraping   (pip install requests beautifulsoup4)
+import json
+
+import requests
+from bs4 import BeautifulSoup
+
+url = 'http://www.scrapethissite.com/pages/forms/'       # a site built for scraping practice
+headers = {'User-Agent': 'Mozilla/5.0'}                   # some sites (Wikipedia) block requests without one
+soup = BeautifulSoup(requests.get(url, headers=headers).text, 'html.parser')
+
+print(soup.title.get_text(strip=True))
+table = soup.find('table')                                # first <table>; find_all() = every one
+
+rows = []
+for tr in table.find_all('tr'):                           # every row
+    rows.append([cell.get_text(strip=True) for cell in tr.find_all(['th', 'td'])])
+
+header, *body = rows
+records = [dict(zip(header, row)) for row in body]       # row -> {column: value}
+print(len(records), records[0])
+
+with open('scraped.json', 'w', encoding='utf-8') as f:   # save as JSON
+    json.dump(records, f, indent=2)
+```
+
+1. Open the page in your browser, right-click the data, choose **Inspect**, and note the tag (`table`, `tr`, `td`) and any `class`.
+2. `soup.find('table', class_='wikitable')` targets one table by class. `class_` has an underscore because `class` is a Python keyword.
+3. Print small pieces first (`print(table.find('tr'))`) before writing the loop.
+4. The old UCI `datasets.php` page is gone. The list now lives at `https://archive.ics.uci.edu/datasets`.
+
+---
+<!-- QUICKSTART:END -->
+
 - [📘 Day 22](#-day-22)
   - [Python Web Scraping](#python-web-scraping)
     - [What is Web Scrapping](#what-is-web-scrapping)

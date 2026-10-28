@@ -1,0 +1,3 @@
+- Exercise 3's `restcountries.eu` is offline. Use `https://restcountries.com/v3.1/all?fields=...` (up to 10 fields, or it returns an error). Country names live in `['name']['common']`.
+- Cat weights are text like `'3 - 5'`: split on `' - '`, convert both parts with `float()`, then average them.
+- No internet? `data/romeo_and_juliet.txt` and `data/cats.json` hold local copies.

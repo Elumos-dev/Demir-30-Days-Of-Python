@@ -16,6 +16,33 @@
 [<< Day 15](../15_Day_Python_type_errors/15_python_type_errors.md) | [Day 17 >>](../17_Day_Exception_handling/17_exception_handling.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
+
+<!-- QUICKSTART:START generated from quickstart/day_16.py by quickstart/build.py, edit that file instead -->
+## ⚡ Quick Start
+
+Run from the repo root: `python3 quickstart/day_16.py` · `Ex L2.3` = the exercise a line helps with.
+
+```py
+# Day 16: datetime
+from datetime import date, datetime, timedelta
+
+now = datetime.now()
+print(now.day, now.month, now.year, now.hour, now.minute)   # Ex 1
+print(now.timestamp())                                      # seconds since 1 Jan 1970
+
+print(now.strftime('%d/%m/%Y %H:%M'))                       # Ex 2: date -> text
+# %d day  %m month  %Y year  %H hour  %M minute  %S second  %B full month name
+
+d = datetime.strptime('14 March, 2027', '%d %B, %Y')        # Ex 3: text -> date
+print(d)                                                    # the format must match exactly
+
+print(datetime(now.year + 1, 1, 1) - now)                   # Ex 4-5: date - date = timedelta
+print(date(2027, 1, 1) + timedelta(days=30))                # date + timedelta = date
+```
+
+---
+<!-- QUICKSTART:END -->
+
 - [📘 Day 16](#-day-16)
   - [Python *datetime*](#python-datetime)
     - [Getting *datetime* Information](#getting-datetime-information)

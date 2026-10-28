@@ -17,6 +17,39 @@
 [<< Day 14](../14_Day_Higher_order_functions/14_higher_order_functions.md) | [Day 16 >>](../16_Day_Python_date_time/16_python_datetime.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
+
+<!-- QUICKSTART:START generated from quickstart/day_15.py by quickstart/build.py, edit that file instead -->
+## ⚡ Quick Start
+
+Run from the repo root: `python3 quickstart/day_15.py` · `Ex L2.3` = the exercise a line helps with.
+
+```py
+# Day 15: error types. Read the LAST line of a traceback first:  ErrorType: message
+# Each string below is broken code. exec() runs a string as code, so one loop can show them all.
+
+broken = [
+    'print(undefined_name)',     # NameError: the variable doesn't exist
+    '[1, 2][5]',                 # IndexError: position out of range
+    "{'a': 1}['b']",             # KeyError: missing dict key
+    "'abc'.push('d')",           # AttributeError: that method doesn't exist
+    "1 + '1'",                   # TypeError: types that don't mix
+    "int('abc')",                # ValueError: right type, impossible value
+    '10 / 0',                    # ZeroDivisionError
+    'import mathh',              # ModuleNotFoundError: typo in a module name
+    'from math import pie',      # ImportError: module exists, name doesn't
+    "print 'hi'",                # SyntaxError: in a real file this stops everything before it runs
+]
+
+for code in broken:
+    try:                         # try/except = Day 17
+        exec(code)
+    except Exception as e:
+        print(f'{type(e).__name__:<20} {code}')
+```
+
+---
+<!-- QUICKSTART:END -->
+
 - [📘 Day 15](#-day-15)
   - [Python Error Types](#python-error-types)
     - [SyntaxError](#syntaxerror)

@@ -1,0 +1,9 @@
+# Everything the Quick Start snippets and their tests need:  pip install -r requirements-dev.txt
+pytest
+numpy
+pandas
+requests
+beautifulsoup4
+flask
+pymongo
+mongomock

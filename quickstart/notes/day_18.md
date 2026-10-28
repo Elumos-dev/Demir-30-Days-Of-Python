@@ -1,0 +1,2 @@
+- Always write patterns as raw strings: `r'\d+'`. Without the `r`, Python reads `\d` itself first.
+- Build patterns one piece at a time and test each piece on [regex101.com](https://regex101.com) (choose the Python flavour).

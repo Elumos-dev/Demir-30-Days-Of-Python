@@ -1,0 +1,3 @@
+- **Mean** `sum(x) / len(x)` · **Median** sort, take the middle (average the two middles when the length is even) · **Mode** most common value · **Range** `max - min`
+- **Variance** average of `(item - mean) ** 2` · **Std** `variance ** 0.5`
+- Check your answers against the built-in `statistics` module: `statistics.mean`, `median`, `mode`, `pvariance`, `pstdev`.

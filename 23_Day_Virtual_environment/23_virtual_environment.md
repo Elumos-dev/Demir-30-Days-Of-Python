@@ -17,6 +17,31 @@
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
+
+<!-- QUICKSTART:START generated from quickstart/day_23.sh by quickstart/build.py, edit that file instead -->
+## ⚡ Quick Start
+
+Type these in a terminal, one line at a time.
+
+```sh
+# Day 23: virtual environments, one per project
+mkdir my_project && cd my_project
+python3 -m venv venv                  # create      (Windows: python -m venv venv)
+source venv/bin/activate              # activate    (Windows: venv\Scripts\activate)
+pip install requests                  # installs into THIS project only
+pip freeze > requirements.txt         # save exact versions
+cat requirements.txt
+deactivate                            # leave the venv
+echo "venv/" > .gitignore             # never commit the venv folder
+# New computer or fresh clone:  python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
+```
+
+- Your terminal prompt shows `(venv)` while the venv is active. `which python` (Windows: `where python`) should point inside `venv/`.
+- VS Code: `Ctrl/Cmd + Shift + P` → **Python: Select Interpreter** → pick the one inside `venv/`.
+
+---
+<!-- QUICKSTART:END -->
+
 - [📘 Day 23](#-day-23)
   - [Setting up Virtual Environments](#setting-up-virtual-environments)
   - [💻 Exercises: Day 23](#-exercises-day-23)

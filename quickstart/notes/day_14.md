@@ -1,0 +1,3 @@
+- **Higher-order function**: takes a function as input or returns one (`map`, `filter`, `sorted(key=...)`).
+- **Closure**: an inner function that still remembers variables from the function that created it.
+- **Decorator**: a closure applied with `@name` above a `def`, so every call goes through the wrapper.

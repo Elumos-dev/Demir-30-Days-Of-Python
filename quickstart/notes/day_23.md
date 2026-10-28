@@ -1,0 +1,2 @@
+- Your terminal prompt shows `(venv)` while the venv is active. `which python` (Windows: `where python`) should point inside `venv/`.
+- VS Code: `Ctrl/Cmd + Shift + P` → **Python: Select Interpreter** → pick the one inside `venv/`.

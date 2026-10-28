@@ -1,0 +1,3 @@
+- Atlas setup: create a free M0 cluster → **Database Access**: add a user → **Network Access**: allow your IP → **Connect** → **Drivers** → copy the URI and put your password in it.
+- Never paste the URI with your password into code you push to GitHub. Read it from an environment variable, as above.
+- Operators: `$gt` `$gte` `$lt` `$lte` `$ne` `$in`, and `$set` for updates.
